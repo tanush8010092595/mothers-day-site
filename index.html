@@ -1,3 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Mother's Day ❤️</title>
+
+<style>
+
+body{
+background:linear-gradient(135deg,#ffe6f0,#fff5f8);
+font-family:Poppins,sans-serif;
+padding:20px;
+text-align:center;
+color:#333;
+}
+
+.card{
+max-width:800px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff4d88;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+video{
+width:100%;
+border-radius:20px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
 <p>
 मम्मी ❤️<br><br>
 
@@ -22,27 +78,28 @@
 Happy Mother’s Day Queen 👑<br>
 Love You Forever and Infinity ♾️❤️
 </p>
-<button onclick="document.getElementById('vid').style.display='block'; this.style.display='none';"
-style="padding:15px 30px;
-border:none;
-border-radius:30px;
-background:#ff4d88;
-color:white;
-font-size:18px;
-cursor:pointer;
-margin-top:20px;">
 
+<button onclick="showVideo()">
 ▶ Special Video For Mom ❤️
-
 </button>
 
-<div id="vid" style="display:none; margin-top:20px;">
+<div id="videoBox" style="display:none;">
 
-<video width="100%" controls
-style="border-radius:20px;">
-
+<video controls>
 <source src="InShot_20260510_221806921.mp4" type="video/mp4">
-
 </video>
 
 </div>
+
+</div>
+
+<script>
+
+function showVideo(){
+document.getElementById("videoBox").style.display="block";
+}
+
+</script>
+
+</body>
+                            </html>
